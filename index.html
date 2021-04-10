@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Fontawesome Kit -->
+    <script src="js/fontawesome.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Intron - User Dashboard</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="--custom-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white position-relative">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo_mark_dark_alt_big.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-lg-center ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Instructions <span class="sr-only">(current)</span></a>
+                            <a href="javascript:void(0);" class="d-lg-none">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/philip.png" alt="">
+                                    <p>Philip</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" class="d-lg-none">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-50">
+                                Logout
+                            </a>
+                            <a href="javascript:void(0);" class="icon d-lg-none">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="intron-dashboard intron-user-dashboard mt-5 mb-5">
+        <div class="--custom-container">
+            <div>
+                <div
+                    class="intron-dashboard__top-stats p-4 --btn-gradient-to-left --border-tr-radius-20 --border-tl-radius-20 --shadow">
+                    <div
+                        class="intron-dashboard__top-tabs d-flex align-items-center flex-wrap justify-content-center justify-content-sm-between">
+                        <h3 class="--f-poppins --fs-34 --fw-600">
+                            Status
+                        </h3>
+                        <div class="intron-dashboard__tabs d-flex justify-content-center mt-3 mt-sm-0">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active text-white --fs-small-10" id="pills-all-tab"
+                                        data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all"
+                                        aria-selected="true">All</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link text-white --fs-small-10" id="pills-country-tab"
+                                        data-toggle="pill" href="#pills-country" role="tab"
+                                        aria-controls="pills-country" aria-selected="false">By Country</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link text-white --fs-small-10" id="pills-native-tab"
+                                        data-toggle="pill" href="#pills-native" role="tab" aria-controls="pills-native"
+                                        aria-selected="false">Native Language</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="intron-dashboard__data p-4 bg-white --border-bl-radius-20 --border-br-radius-20 --shadow">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                            aria-labelledby="pills-all-tab">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <h3 class="--f-poppins --fw-600 --fs-44 --c-orange">24</h3>
+                                        <p class="m-0 mt-3 --f-poppins --fw-400 --fs-18">Clips You've Recorded</p>
+                                        <a href="javascript:void(0);"
+                                            class="btn --large-btn text-white --bg-orange --border-radius-50 --f-poppins --fs-16 --fw-400 mt-3">Help
+                                            us to Record Again</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-3 mt-lg-0">
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <h1 class="--f-poppins --fw-600 --fs-64 --c-primary">103<small
+                                                class="--fs-24">min</small></h1>
+                                        <p class="m-0 mt-3 --f-poppins --fw-400 --fs-18">Total minutes of recordings</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-3 mt-lg-0">
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <h3 class="--f-poppins --fw-600 --fs-44 --c-secondary">04</h3>
+                                        <p class="m-0 mt-3 --f-poppins --fw-400 --fs-18">Clips You've Listened</p>
+                                        <a href="javascript:void(0);"
+                                            class="btn --large-btn text-white --bg-secondary --border-radius-50 --f-poppins --fs-16 --fw-400 mt-3">Help
+                                            us to Listen again</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-country" role="tabpanel"
+                            aria-labelledby="pills-country-tab">
+                            Map Plugin Will Go Here
+                        </div>
+                        <div class="tab-pane fade" id="pills-native" role="tabpanel" aria-labelledby="pills-native-tab">
+                            Pie Chart Will Go Here
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="intron-dashboard__contribution p-3 --shadow --border-radius-20">
+                            <h3 class="--f-poppins --fs-24 --fw-600">Contribution Activity</h3>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item w-50" role="presentation">
+                                        <a class="nav-link active --border-tl-radius-20 --border-bl-radius-20"
+                                            id="pills-you-tab" data-toggle="pill" href="#pills-you" role="tab"
+                                            aria-controls="pills-you" aria-selected="true">You</a>
+                                    </li>
+                                    <li class="nav-item w-50" role="presentation">
+                                        <a class="nav-link --border" id="pills-anyone-tab" data-toggle="pill"
+                                            href="#pills-anyone" role="tab" aria-controls="pills-anyone"
+                                            aria-selected="false">Anyone</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane show active" id="pills-you" role="tabpanel"
+                                        aria-labelledby="pills-you-tab">
+                                        Activity by you
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-anyone" role="tabpanel"
+                                        aria-labelledby="pills-anyone-tab">
+                                        Activity by anyone
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <div class="intron-dashboard__contributors p-3 --shadow --border-radius-20">
+                            <h3 class="--f-poppins --fs-24 --fw-600">Top Contributors</h3>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item w-50" role="presentation">
+                                        <a class="nav-link active" id="pills-recorded-tab" data-toggle="pill"
+                                            href="#pills-recorded" role="tab" aria-controls="pills-recorded"
+                                            aria-selected="true">Recorded</a>
+                                    </li>
+                                    <li class="nav-item w-50" role="presentation">
+                                        <a class="nav-link" id="pills-listened-tab" data-toggle="pill"
+                                            href="#pills-listened" role="tab" aria-controls="pills-listened"
+                                            aria-selected="false">Listened</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane show active" id="pills-recorded" role="tabpanel"
+                                        aria-labelledby="pills-recorded-tab">
+                                        <div class="overflow-auto" style="max-height: 350px;">
+                                            <div class="intron-user-dashboard__list d-flex flex-column">
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-listened" role="tabpanel"
+                                        aria-labelledby="pills-listened-tab">
+                                        <div class="overflow-auto" style="max-height: 350px;">
+                                            <div class="intron-dashboard__list d-flex flex-column">
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="--bg-dull d-flex align-items-center pt-2 pb-2 pl-3 pr-3 mt-1">
+                                                    <div class="d-flex"><img src="./img/thiziri.png" alt=""></div>
+                                                    <div class="ml-2">Thiziri</div>
+                                                    <div class="ml-auto --f-poppins --fs-12 --c-text">View
+                                                        feedback <a href="javascript:void(0)"><i
+                                                                class="fa fa-chevron-down --c-primary"></i></a></div>
+                                                    <div class="ml-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img src="./img/play-fill.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="intron-footer">
+        <div class="--custom-container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-left">
+                        <div>
+                            <img src="img/logo_mark_light_alt_big.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mt-3 mt-md-0">
+                    <p class="text-white --fs-18 text-center text-md-left">Explorer</p>
+                    <div class="d-flex justify-content-center justify-content-md-between w-100 mt-3">
+                        <a href="javascript:void(0);" class="text-white --fs-14 mr-2">Privacy</a>
+                        <a href="javascript:void(0);" class="text-white --fs-14 mr-2 ml-2">Terms</a>
+                        <a href="javascript:void(0);" class="text-white --fs-14 mr-2 ml-2">Cookies</a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                    <p class="text-white --fs-18 text-center text-md-left">Explorer</p>
+                    <div class="d-flex justify-content-center justify-content-md-between w-100 mt-3">
+                        <a href="javascript:void(0);" class="text-white --fs-16">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-facebook mr-2"></i> Facebook
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="text-white --fs-16 ml-2">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-linkedin mr-2"></i> Facebook
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="text-white --fs-16 ml-2">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-twitter mr-2"></i> Facebook
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>

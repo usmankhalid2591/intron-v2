@@ -1,0 +1,59 @@
+.intron-guest-signup {
+  background: url(../img/main-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+
+  &__left {
+    height: 100%;
+    width: 50%;
+    min-width: 496px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__right {
+    height: 100%;
+    width: 50%;
+    min-width: 496px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__form {
+    width: calc(100% - 200px);
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .intron-guest-signup {
+    &__left {
+      width: 100%;
+      height: auto;
+    }
+    &__right {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 500px) {
+  .intron-guest-signup {
+    &__left {
+      min-width: unset;
+    }
+    &__right {
+      min-width: unset;
+    }
+  }
+}

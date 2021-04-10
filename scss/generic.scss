@@ -1,0 +1,138 @@
+// Custom Container
+.--custom-container {
+  max-width: calc(100% - 260px);
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .--custom-container {
+    max-width: calc(100% - 160px);
+  }
+}
+
+@media (max-width: 992px) {
+  .--custom-container {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 768px) {
+  .--custom-container {
+    max-width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 500px) {
+  .--custom-container {
+    max-width: calc(100% - 60px);
+  }
+}
+
+// Form styles
+input,
+select {
+  height: 55px !important;
+}
+
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" /></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: var(--secondary);
+  background-color: var(--secondary);
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0px 0px 2px 2px #c6e86fa8 !important;
+  border-color: #c6e86fa8 !important;
+}
+
+input,
+select {
+  border-radius: var(--border-radius-5) !important;
+}
+
+.form-control:focus,
+.custom-control-input:focus {
+  box-shadow: 0px 0px 2px 2px #c6e86fa8 !important;
+  border-color: #c6e86fa8 !important;
+}
+
+// Button Styles
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.--big-btn {
+  height: 55px;
+  width: 350px;
+}
+
+.--large-btn {
+  width: 245px;
+  height: 55px;
+}
+
+.--medium-btn {
+  height: 55px;
+  width: 194px;
+}
+
+.--small-btn {
+  height: 40px;
+  width: 89px;
+}
+
+.--small-btn-rounded {
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+}
+
+.--extra-small-btn-rounded {
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+}
+
+.--btn-outlined {
+  border-radius: 50px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .--big-btn {
+    width: 200px;
+  }
+}
+
+// Design
+.back-arrow {
+  background: white;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.back-arrow:hover {
+  text-decoration: none;
+  color: var(--primary);
+}

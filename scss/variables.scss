@@ -1,0 +1,48 @@
+@import "./colors.scss";
+
+:root {
+  --border-radius-0: 0px;
+  --border-radius-5: 5px;
+  --border-radius-20: 20px;
+  --border-radius-50: 50px;
+}
+
+.--border-radius-0 {
+  border-radius: var(--border-radius-0);
+}
+
+.--border-radius-5 {
+  border-radius: var(--border-radius-5);
+}
+
+.--border-radius-20 {
+  border-radius: var(--border-radius-20);
+}
+
+.--border-tr-radius-20 {
+  border-top-right-radius: var(--border-radius-20);
+}
+
+.--border-tl-radius-20 {
+  border-top-left-radius: var(--border-radius-20);
+}
+
+.--border-br-radius-20 {
+  border-bottom-right-radius: var(--border-radius-20);
+}
+
+.--border-bl-radius-20 {
+  border-bottom-left-radius: var(--border-radius-20);
+}
+
+.--border-radius-50 {
+  border-radius: var(--border-radius-50);
+}
+
+.--border {
+  border-color: var(--border); //imported from colors
+}
+
+.--shadow {
+  box-shadow: 0px 0px 5px 5px var(--shadow);
+}

@@ -1,5 +1,9 @@
 .header {
   box-shadow: 0px 0px 5px 5px var(--shadow);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
   .navbar-brand {
     width: 134px;
     img {

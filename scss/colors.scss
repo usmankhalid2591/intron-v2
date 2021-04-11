@@ -8,6 +8,7 @@
   --turquoise-dark: #41ccc9;
   --btn-gradient-to-right: linear-gradient(to right, #41ccc9, #4a77ae);
   --btn-gradient-to-left: linear-gradient(to left, #4a77ae, #41ccc9);
+  --btn-gradient-to-bottom: linear-gradient(to bottom, #47337b, #44559a);
   --link: #4a77ae;
   --border: #33333320;
   --text: #333333;
@@ -62,8 +63,18 @@
   color: white !important;
 }
 
+.--btn-gradient-to-bottom {
+  background: var(--btn-gradient-to-bottom);
+  color: white !important;
+}
+
 .--btn-orange {
   background: var(--orange);
+  color: white;
+}
+
+.--btn-turqoise {
+  background: var(--turquoise-dark);
   color: white;
 }
 

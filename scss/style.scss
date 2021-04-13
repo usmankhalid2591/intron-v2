@@ -21,3 +21,10 @@
   padding-top: 100px;
   padding-bottom: 20px;
 }
+
+.intron-order-summary {
+  .nav-link.active {
+    background: var(--turquoise) !important;
+    color: var(--turquoise-dark) !important;
+  }
+}

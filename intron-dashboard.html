@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Fontawesome Kit -->
+    <script src="js/fontawesome.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Intron - Upload Telecare</title>
+</head>
+
+<body class="fixed-top-nav-compensation">
+
+    <div class="header --z-index-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white position-relative">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo_mark_dark_alt_big.png" alt="">
+            </a>
+
+            <div class="top-search-wrap position-relative mr-auto d-none d-md-block">
+                <a href="javascript:void(0);" class="position-absolute d-flex"
+                    style="right: 5px; top: 50%; transform: translateY(calc(-50% - 1px));">
+                    <img src="./img/search-icon.png" alt="">
+                </a>
+                <div class="form-group m-0 --border-radius-50">
+                    <input type="text" class="form-control --border-radius-50" style="padding-right: 60px;"
+                        id="input-field" placeholder="Search..">
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-lg-center ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="./img/philip.png" alt="">
+                                <p class="d-lg-none">Philip</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="d-lg-none">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-50">
+                            Take a print
+                        </a>
+                        <a href="javascript:void(0);" class="icon d-lg-none">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-50">
+                            Logout
+                        </a>
+                        <a href="javascript:void(0);" class="icon d-lg-none">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <a href="javascript:void(0);" class="d-md-none position-fixed" id="sideNavToggler" style="top: 130px;
+    width: 40px;
+    left: -20px;
+    background: var(--btn-gradient-to-right);
+    border-radius: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 7px;
+    color: white;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 5px 5px #00000030;
+    z-index: 1;">
+    </a>
+
+    <div class="side-nav --btn-gradient-to-bottom --border-tr-radius-20 overflow-auto" id="sideNav">
+
+        <ul class="list-unstyled p-0 m-0">
+            <li class="">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="ml-3">
+                        Setup
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1 active">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5 position-relative"
+                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="position-absolute" style="top: 50%; transform: translateY(-50%); right: 20px;">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-user-lock"></i>
+                    </div>
+                    <div class="ml-3">
+                        Admin
+                    </div>
+                </a>
+
+                <div class="accordion mr-5" id="accordionExample">
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body pl-5 pt-0">
+                            <ul class="list-unstyled p-0 list-inner">
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">Add Patient</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">All Patients</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">Add Staff</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">All Staff</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">Add Admin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5 position-relative"
+                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <div class="position-absolute" style="top: 50%; transform: translateY(-50%); right: 20px;">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="ml-3">
+                        Accounts
+                    </div>
+                </a>
+
+                <div class="accordion mr-5" id="accordionExample">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body pl-5 pt-0">
+                            <ul class="list-unstyled p-0 list-inner">
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">Add Patient</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">All Patients</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">Add Staff</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">All Staff</a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="javascript:void(0);" class="pt-2 pb-2">Add Admin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="ml-3">
+                        Profile
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="ml-3">
+                        Inbox
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <div class="ml-3">
+                        Work list
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="ml-3">
+                        Stats
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="ml-3">
+                        History
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="ml-3">
+                        Feedback
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="intron-dashboard__data bg-white --border-radius-20 --shadow">
+        <h2 class="--fs-26 --fw-500 --f-poppins pl-3 pr-3 pt-3">PATIENT UTILIZATION</h2>
+        <hr>
+        <div class="row p-3">
+            <div class="col-lg-3">
+                <div class="d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="--f-poppins --fw-600 --fs-44 --c-turquoise-dark">24</h3>
+                    <p class="m-0 mt-3 --f-poppins --fw-400 --fs-18 text-center">Total Patient</p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 mt-lg-0">
+                <div class="d-flex align-items-center justify-content-center flex-column">
+                    <h1 class="--f-poppins --fw-600 --fs-44 --c-primary">99<small class="--fs-24">min</small>
+                    </h1>
+                    <p class="m-0 mt-3 --f-poppins --fw-400 --fs-18 text-center">Total Inpatients</p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 mt-lg-0">
+                <div class="d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="--f-poppins --fw-600 --fs-44 --c-orange">04</h3>
+                    <p class="m-0 mt-3 --f-poppins --fw-400 --fs-18 text-center">Total Emergency</p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 mt-lg-0">
+                <div class="d-flex align-items-center justify-content-center flex-column">
+                    <h3 class="--f-poppins --fw-600 --fs-44 --c-secondary">04</h3>
+                    <p class="m-0 mt-3 --f-poppins --fw-400 --fs-18 text-center">Total Outpatients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="intron-total-utilization shadow pt-3 pb-3 --border-radius-20 mt-4">
+                <h2 class="--fs-26 --fw-500 --f-poppins pl-3 pr-3">Total Utilization</h2>
+                <hr>
+                <div class="pl-3 pr-3">
+                    Plugin goes here.
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="intron-order-summary shadow pt-3 pb-3 --border-radius-20 mt-4">
+                <h2 class="--fs-26 --fw-500 --f-poppins pl-3 pr-3">Order Summary</h2>
+                <hr>
+                <div class="pl-3 pr-3">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Total Orders</td>
+                                <td class="text-right">100</td>
+                            </tr>
+                            <tr>
+                                <td>Total Laboratory</td>
+                                <td class="text-right">8</td>
+                            </tr>
+                            <tr>
+                                <td>Total Radiology</td>
+                                <td class="text-right">16</td>
+                            </tr>
+                            <tr>
+                                <td>Total Drugs</td>
+                                <td class="text-right">35</td>
+                            </tr>
+                            <tr>
+                                <td>Total Procedures</td>
+                                <td class="text-right">6</td>
+                            </tr>
+                            <tr>
+                                <td>Total Medical Supplies</td>
+                                <td class="text-right">23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="intron-order-summary shadow pt-3 pb-3 --border-radius-20 mt-4">
+                <div class="d-flex justify-content-between align-items-center pl-3 pr-3">
+                    <h2 class="--fs-26 --fw-500 --f-poppins">Total Order Counts</h2>
+                    <div>
+                        <ul class="nav nav-pills --shadow" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark active" id="pills-week-tab" data-toggle="pill"
+                                    href="#pills-week" role="tab" aria-controls="pills-week"
+                                    aria-selected="true">Week</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark" id="pills-month-tab" data-toggle="pill"
+                                    href="#pills-month" role="tab" aria-controls="pills-month"
+                                    aria-selected="false">Month</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark" id="pills-year-tab" data-toggle="pill"
+                                    href="#pills-year" role="tab" aria-controls="pills-year"
+                                    aria-selected="false">Year</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="pl-3 pr-3">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-week" role="tabpanel"
+                            aria-labelledby="pills-week-tab">Plugin goes here.</div>
+                        <div class="tab-pane fade" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
+                            Plugin goes here.</div>
+                        <div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">
+                            Plugin goes here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="intron-order-summary shadow pt-3 pb-3 --border-radius-20 mt-4">
+                <div class="d-flex justify-content-between align-items-center pl-3 pr-3">
+                    <h2 class="--fs-26 --fw-500 --f-poppins">Utilization Trends</h2>
+                    <div>
+                        <ul class="nav nav-pills --shadow" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark active" id="pills-week-tab" data-toggle="pill"
+                                    href="#pills-week" role="tab" aria-controls="pills-week"
+                                    aria-selected="true">Week</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark" id="pills-month-tab" data-toggle="pill"
+                                    href="#pills-month" role="tab" aria-controls="pills-month"
+                                    aria-selected="false">Month</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark" id="pills-year-tab" data-toggle="pill"
+                                    href="#pills-year" role="tab" aria-controls="pills-year"
+                                    aria-selected="false">Year</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="pl-3 pr-3">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-week" role="tabpanel"
+                            aria-labelledby="pills-week-tab">
+                            Plugin goes here.</div>
+                        <div class="tab-pane fade" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
+                            Plugin goes here.</div>
+                        <div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">
+                            Plugin goes here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="intron-order-summary shadow pt-3 pb-3 --border-radius-20 mt-4">
+                <div class="d-flex justify-content-between align-items-center pl-3 pr-3">
+                    <h2 class="--fs-26 --fw-500 --f-poppins">Clinical Statistics</h2>
+                    <div>
+                        <ul class="nav nav-pills --shadow" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark active" id="pills-week-tab" data-toggle="pill"
+                                    href="#pills-week" role="tab" aria-controls="pills-week"
+                                    aria-selected="true">Week</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark" id="pills-month-tab" data-toggle="pill"
+                                    href="#pills-month" role="tab" aria-controls="pills-month"
+                                    aria-selected="false">Month</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link bg-white text-dark" id="pills-year-tab" data-toggle="pill"
+                                    href="#pills-year" role="tab" aria-controls="pills-year"
+                                    aria-selected="false">Year</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="pl-3 pr-3">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-week" role="tabpanel"
+                            aria-labelledby="pills-week-tab">
+                            Plugin goes here.</div>
+                        <div class="tab-pane fade" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
+                            Plugin goes here.</div>
+                        <div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">
+                            Plugin goes here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h2 class="--fs-26 --fw-500 --f-poppins mt-4">Clinical</h2>
+        </div>
+        <div class="col-12 col-lg-5">
+            <div class="intron-total-utilization shadow pt-3 pb-3 --border-radius-20 mt-4">
+                <h2 class="--fs-26 --fw-500 --f-poppins pl-3 pr-3">Top 5 Diagnosis</h2>
+                <hr>
+                <div class="pl-3 pr-3">
+                    Plugin goes here.
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-7">
+            <div class="intron-order-summary shadow pt-3 pb-3 --border-radius-20 mt-4">
+                <h2 class="--fs-26 --fw-500 --f-poppins pl-3 pr-3">Patient age Distribution</h2>
+                <hr>
+                <div class="pl-3 pr-3">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Total Orders</td>
+                                <td class="text-right">100</td>
+                            </tr>
+                            <tr>
+                                <td>Total Laboratory</td>
+                                <td class="text-right">8</td>
+                            </tr>
+                            <tr>
+                                <td>Total Radiology</td>
+                                <td class="text-right">16</td>
+                            </tr>
+                            <tr>
+                                <td>Total Drugs</td>
+                                <td class="text-right">35</td>
+                            </tr>
+                            <tr>
+                                <td>Total Procedures</td>
+                                <td class="text-right">6</td>
+                            </tr>
+                            <tr>
+                                <td>Total Medical Supplies</td>
+                                <td class="text-right">23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>

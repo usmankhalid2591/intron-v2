@@ -18,7 +18,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.min.css">
 
-    <title>Intron - Upload Telecare</title>
+    <title>Intron - Patient Registration</title>
 </head>
 
 <body class="fixed-top-nav-compensation">
@@ -30,13 +30,13 @@
             </a>
 
             <div class="top-search-wrap position-relative mr-auto d-none d-md-block">
-                <a href="javascript:void(0);" class="position-absolute d-flex"
-                    style="right: 5px; top: 50%; transform: translateY(calc(-50% - 1px));">
+                <a href="javascript:void(0);" class="position-absolute h-100 d-flex"
+                    style="right: -10px; top: 50%; transform: translateY(-50%); padding: 2px;">
                     <img src="./img/search-icon.png" alt="">
                 </a>
                 <div class="form-group m-0 --border-radius-50">
-                    <input type="text" class="form-control --border-radius-50" style="padding-right: 60px;"
-                        id="input-field" placeholder="Search..">
+                    <input type="text" class="form-control --border-radius-50"
+                        style="padding-right: 60px; height: 40px !important;" id="input-field" placeholder="Search..">
                 </div>
             </div>
 
@@ -60,6 +60,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-50">
+                            <i class="fas fa-print mr-2"></i>
                             Take a print
                         </a>
                         <a href="javascript:void(0);" class="icon d-lg-none">
@@ -68,6 +69,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-50">
+                            <i class="fas fa-sign-out-alt mr-2"></i>
                             Logout
                         </a>
                         <a href="javascript:void(0);" class="icon d-lg-none">
@@ -108,24 +110,21 @@
                     </div>
                 </a>
             </li>
-
             <li class="mt-1 active">
-                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5 position-relative"
-                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <div class="position-absolute" style="top: 50%; transform: translateY(-50%); right: 20px;">
-                        <i class="fa fa-chevron-down"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-user-lock"></i>
-                    </div>
-                    <div class="ml-3">
-                        Admin
-                    </div>
-                </a>
-
-                <div class="accordion mr-5" id="accordionExample">
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body pl-5 pt-0">
+                <div id="accordion" class="accordion">
+                    <div class="position-relative mb-0">
+                        <div class="card-header bg-transparent border-0 p-0 collapsed" data-toggle="collapse"
+                            href="#collapseOne">
+                            <a class="card-title pl-5 pt-3 pb-3 mr-5 mb-0 text-white d-flex">
+                                <div>
+                                    <i class="fas fa-user-lock"></i>
+                                </div>
+                                <div class="ml-3">
+                                    Admin
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
                             <ul class="list-unstyled p-0 list-inner">
                                 <li class="mt-1">
                                     <a href="javascript:void(0);" class="pt-2 pb-2">Add Patient</a>
@@ -149,22 +148,20 @@
             </li>
 
             <li class="mt-1">
-                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5 position-relative"
-                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <div class="position-absolute" style="top: 50%; transform: translateY(-50%); right: 20px;">
-                        <i class="fa fa-chevron-down"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="ml-3">
-                        Accounts
-                    </div>
-                </a>
-
-                <div class="accordion mr-5" id="accordionExample">
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body pl-5 pt-0">
+                <div id="accordion" class="accordion">
+                    <div class="position-relative mb-0">
+                        <div class="card-header bg-transparent border-0 p-0 collapsed" data-toggle="collapse"
+                            href="#collapseTwo">
+                            <a class="card-title pl-5 pt-3 pb-3 mr-5 mb-0 text-white d-flex">
+                                <div>
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="ml-3">
+                                    Accounts
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
                             <ul class="list-unstyled p-0 list-inner">
                                 <li class="mt-1">
                                     <a href="javascript:void(0);" class="pt-2 pb-2">Add Patient</a>

@@ -11,17 +11,31 @@
 
   ul {
     li {
+      .card-header::after {
+        font-family: "FontAwesome";
+        content: "\f077";
+        color: white;
+        position: absolute;
+        right: 70px;
+        top: 16px;
+      }
+      .card-header.collapsed::after {
+        /* symbol for "collapsed" panels */
+        content: "\f078";
+        color: white;
+        position: absolute;
+        right: 70px;
+        top: 16px;
+      }
+
       a {
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
       }
       a:hover {
-        background: var(--turquoise-dark);
+        background: rgba(0, 0, 0, 0.03);
+        cursor: pointer;
       }
-      a.collapsed .fa {
-        transform: rotate(180deg);
-      }
-
       .list-inner {
         li:nth-last-of-type(1) {
           margin: 0px;

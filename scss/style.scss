@@ -29,3 +29,73 @@
     color: var(--turquoise-dark) !important;
   }
 }
+
+.intron-data-filter-tabs {
+  &__tab.active {
+    background: var(--primary);
+    color: white;
+  }
+  &__tab.active:hover {
+    color: white;
+  }
+}
+
+.intron-patient-data-table {
+  &__line-turquoise::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--turquoise-dark);
+    border-radius: 50px;
+    top: -30px;
+    position: absolute;
+    left: -29px;
+  }
+  &__line-turquoise::after {
+    content: "";
+    width: 1px;
+    background: var(--turquoise-dark);
+    left: -25px;
+    top: -20px;
+    position: absolute;
+    height: calc(100% + 30px);
+  }
+  &__line-purple::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50px;
+    top: -30px;
+    position: absolute;
+    left: -29px;
+  }
+  &__line-purple::after {
+    content: "";
+    width: 1px;
+    background: var(--primary);
+    left: -25px;
+    top: -20px;
+    position: absolute;
+    height: calc(100% + 30px);
+  }
+  &__line-orange::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--orange);
+    border-radius: 50px;
+    top: -30px;
+    position: absolute;
+    left: -29px;
+  }
+  &__line-orange::after {
+    content: "";
+    width: 1px;
+    background: var(--orange);
+    left: -25px;
+    top: -20px;
+    position: absolute;
+    height: calc(100% + 30px);
+  }
+}

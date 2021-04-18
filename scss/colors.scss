@@ -1,9 +1,12 @@
 :root {
   --primary: #47337b;
+  --primary-light: #e7e1fe;
   --secondary: #a8cf45;
   --primary-transparent: #47337b80;
   --secondary-transparent: #a8cf4580;
   --orange: #ff5757;
+  --orange-light: #f9e8e0;
+  --turquoise-light: #dcf2f5;
   --turquoise: #b7f6ea;
   --turquoise-dark: #41ccc9;
   --btn-gradient-to-right: linear-gradient(to right, #41ccc9, #4a77ae);
@@ -25,6 +28,14 @@
   background: var(--primary);
 }
 
+.--c-primary-light {
+  color: var(--primary-light);
+}
+
+.--bg-primary-light {
+  background: var(--primary-light);
+}
+
 .--c-secondary {
   color: var(--secondary);
 }
@@ -41,16 +52,36 @@
   background: var(--orange);
 }
 
+.--c-orange-light {
+  color: var(--orange-light);
+}
+
+.--bg-orange-light {
+  background: var(--orange-light);
+}
+
 .--c-turquoise {
   color: var(--turquoise);
+}
+
+.--bg-turqoise {
+  background: var(--turquoise);
+}
+
+.--c-turquoise-light {
+  color: var(--turquoise-light);
+}
+
+.--bg-turqoise-light {
+  background: var(--turquoise-light);
 }
 
 .--c-turquoise-dark {
   color: var(--turquoise-dark);
 }
 
-.--bg-turqoise {
-  background: var(--turquoise);
+.--bg-turquoise-dark {
+  background: var(--turquoise-dark);
 }
 
 .--btn-gradient-to-right {

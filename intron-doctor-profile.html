@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Fontawesome Kit -->
+    <script src="js/fontawesome.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Intron - Patient Data</title>
+</head>
+
+<body class="fixed-top-nav-compensation">
+
+    <div class="header --z-index-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white position-relative">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo_mark_dark_alt_big.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-lg-center ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="./img/philip.png" alt="">
+                                <p class="d-lg-none">Philip</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="d-lg-none">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-50">
+                            <i class="fas fa-print mr-2"></i>
+                            Take a print
+                        </a>
+                        <a href="javascript:void(0);" class="icon d-lg-none">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-50">
+                            <i class="fas fa-sign-out-alt mr-2"></i>
+                            Logout
+                        </a>
+                        <a href="javascript:void(0);" class="icon d-lg-none">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <a href="javascript:void(0);" class="d-md-none position-fixed" id="sideNavToggler" style="top: 130px;
+    width: 40px;
+    left: -20px;
+    background: var(--btn-gradient-to-right);
+    border-radius: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 7px;
+    color: white;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 5px 5px #00000030;
+    z-index: 1;">
+    </a>
+
+    <div class="side-nav --btn-gradient-to-bottom --border-tr-radius-20 overflow-auto" id="sideNav">
+
+        <ul class="list-unstyled p-0 m-0">
+
+            <li class="">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="ml-3">
+                        Profile
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="ml-3">
+                        Inbox
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <div class="ml-3">
+                        Work list
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-file"></i>
+                    </div>
+                    <div class="ml-3">
+                        Case Note
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1 active">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="ml-3">
+                        Upload Telecare
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="ml-3">
+                        Stats
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="ml-3">
+                        History
+                    </div>
+                </a>
+            </li>
+
+            <li class="mt-1">
+                <a href="javascript:void(0);" class="d-flex text-white pl-5 pt-3 pb-3 mr-5">
+                    <div>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="ml-3">
+                        Feedback
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="intron-doctor-profile">
+        <div class="row">
+            <div class="col-12 col-xl-7">
+                <div class="container">
+                    <div class="row p-5 --border-radius-20 shadow">
+                        <div class="col-12 col-lg-4">
+                            <div class="d-flex align-items-center h-100">
+                                <div style="max-width: 250px;">
+                                    <img src="./img/doctors-profile-image.png" class="w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="d-flex h-100 flex-column justify-content-center">
+                                <h2 class="--fs-38 --fw-500 --f-poppins mb-3 mt-5">Welcome!</h2>
+                                <p class="--fs-32 --fw-400 --f-poppins mb-3">Prof. Walter Barrett</p>
+                                <div class="top-search-wrap w-100 position-relative mr-auto d-none d-md-block mb-5">
+                                    <a href="javascript:void(0);" class="position-absolute h-100 d-flex"
+                                        style="right: -10px; top: 50%; transform: translateY(-50%); padding: 2px;">
+                                        <img src="./img/search-icon.png" alt="">
+                                    </a>
+                                    <div class="form-group m-0 --border-radius-50">
+                                        <input type="text" class="form-control --border-radius-50"
+                                            style="padding-right: 60px; height: 40px !important;" id="input-field"
+                                            placeholder="To search name or hospital ID..">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-5 mt-5 mt-xl-0">
+                <div class="h-100">
+                    <div class="row h-100">
+                        <div class="col-12 col-lg-5">
+                            <div class="pb-1 intron-doctor-profile__stats">
+                                <div
+                                    class="--bg-turqoise-light p-3 --border-radius-20 overflow-hidden position-relative h-100">
+                                    <div class="position-absolute" style="right: -30px; bottom: -20px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="98" height="97.439"
+                                            viewBox="0 0 98 97.439">
+                                            <g id="doctors-profile-order-to-date-graphic"
+                                                transform="translate(-1428 -227.561)">
+                                                <path id="Path_200525" data-name="Path 200525"
+                                                    d="M34,0C52.113,16.789,68,15.222,68,34A34,34,0,0,1,0,34C0,15.222,15.887-16.789,34,0Z"
+                                                    transform="translate(1428 257)" fill="rgba(65,204,201,0.15)" />
+                                                <path id="Path_200524" data-name="Path 200524"
+                                                    d="M34,0C46.989-21.219,68,15.222,68,34A34,34,0,0,1,0,34C0,15.222,21.011,21.219,34,0Z"
+                                                    transform="translate(1458 234)" fill="rgba(65,204,201,0.15)" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <p class="--f-poppins --fs-16 --fw-300">Orders to Date</p>
+                                    <h3 class="--f-poppins --fs-24 --fw-700 --c-turquoise-dark">45,320</h3>
+                                </div>
+                            </div>
+                            <div class="pt-1 intron-doctor-profile__stats">
+                                <div
+                                    class="--bg-orange-light p-3 --border-radius-20 overflow-hidden position-relative h-100">
+                                    <div class="position-absolute" style="right: -30px; bottom: -20px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="98" height="97.439"
+                                            viewBox="0 0 98 97.439">
+                                            <g id="Group_2440" data-name="Group 2440"
+                                                transform="translate(-1428 -227.561)">
+                                                <path id="Path_200526" data-name="Path 200526"
+                                                    d="M34,0C52.113,16.789,68,15.222,68,34A34,34,0,0,1,0,34C0,15.222,15.887-16.789,34,0Z"
+                                                    transform="translate(1428 257)" fill="#ff5757" opacity="0.15" />
+                                                <path id="Path_200527" data-name="Path 200527"
+                                                    d="M34,0C46.989-21.219,68,15.222,68,34A34,34,0,0,1,0,34C0,15.222,21.011,21.219,34,0Z"
+                                                    transform="translate(1458 234)" fill="#ff5757" opacity="0.15" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <p class="--f-poppins --fs-16 --fw-300">Patient Seen</p>
+                                    <h3 class="--f-poppins --fs-24 --fw-700 --c-orange">25</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 mt-2 mt-lg-0">
+                            <div class="pb-1 intron-doctor-profile__stats position-relative">
+                                <div
+                                    class="--bg-turqoise-light p-3 --border-radius-20 overflow-hidden position-relative h-100">
+                                    <p class="--f-poppins --fs-16 --fw-300">Reward Status</p>
+                                    <h3 class="--f-poppins --fs-24 --fw-700 --c-orange">Adult</h3>
+                                </div>
+                                <p class="position-absolute --c-text text-center"
+                                    style="bottom: 10px; left: 50%; transform: translateX(-50%);">
+                                    <span class="--c-orange">18 points</span> left to next reward!
+                                </p>
+                            </div>
+
+                            <div class="pt-1 intron-doctor-profile__stats">
+                                <div class="--bg-primary-light p-3 --border-radius-20 position-relative h-100">
+                                    <p class="--f-poppins --fs-16 --fw-300">Leader this week</p>
+                                    <h3 class="--f-poppins --fs-24 --fw-700 --c-orange"></h3>
+                                    <p class="m-0">Prof. Jasm..</p>
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar --bg-turquoise-dark" role="progressbar"
+                                            style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <p class="m-0">Prof. Weber</p>
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 30%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="m-0">Dr. Danielle</p>
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="m-0">Dr. Beverly</p>
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mt-5 --shadow --border-radius-20">
+        <div class="row p-3">
+            <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <h3 class="--fs-22 --fw-500 --f-poppins">Appointments today</h3>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-50">
+                            <i class="fa fa-calendar mr-2"></i>
+                            06/29/1968
+                            <i class="fa fa-chevron-down ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="--border-bl-radius-20 --border-br-radius-20 overflow-auto p-2" style="max-height: 400px;">
+            <table class="table table-striped m-0" style="min-width: 800px;">
+                <thead>
+                    <tr>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">#
+                        </th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient ID
+                        </th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient Name</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Phone</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Gender</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Consultant</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Last Seen</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2801</td>
+                        <td>PRI/1234</td>
+                        <th>Md : Ali</th>
+                        <td>(622) 730 - 1138</td>
+                        <td>Male</td>
+                        <td>Prof. Jasmine Ortiz</td>
+                        <td>06/29/1986</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>2801</td>
+                        <td>PRI/1234</td>
+                        <th>Md : Ali</th>
+                        <td>(622) 730 - 1138</td>
+                        <td>Male</td>
+                        <td>Prof. Jasmine Ortiz</td>
+                        <td>06/29/1986</td>
+                        <td class="--c-orange">Pending</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="javascript:void(0);" class="--c-primary">Load more</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+    <div class="mt-5 --shadow --border-radius-20">
+        <div class="row p-3">
+            <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <h3 class="--fs-22 --fw-500 --f-poppins">Primary Patient</h3>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-50">
+                            <i class="fa fa-calendar mr-2"></i>
+                            06/29/1968
+                            <i class="fa fa-chevron-down ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="--border-bl-radius-20 --border-br-radius-20 overflow-auto p-2" style="max-height: 400px;">
+            <table class="table table-striped m-0" style="min-width: 800px;">
+                <thead>
+                    <tr>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">#
+                        </th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient ID
+                        </th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient Name</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Phone</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Gender</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Consultant</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Last Seen</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2801</td>
+                        <td>PRI/1234</td>
+                        <th>Md : Ali</th>
+                        <td>(622) 730 - 1138</td>
+                        <td>Male</td>
+                        <td>Prof. Jasmine Ortiz</td>
+                        <td>06/29/1986</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>2801</td>
+                        <td>PRI/1234</td>
+                        <th>Md : Ali</th>
+                        <td>(622) 730 - 1138</td>
+                        <td>Male</td>
+                        <td>Prof. Jasmine Ortiz</td>
+                        <td>06/29/1986</td>
+                        <td class="--c-orange">Pending</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="javascript:void(0);" class="--c-primary">Load more</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+    <div class="mt-5 --shadow --border-radius-20">
+        <div class="row p-3">
+            <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <h3 class="--fs-22 --fw-500 --f-poppins">Consults</h3>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-50">
+                            <i class="fa fa-calendar mr-2"></i>
+                            06/29/1968
+                            <i class="fa fa-chevron-down ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="--border-bl-radius-20 --border-br-radius-20 overflow-auto p-2" style="max-height: 400px;">
+            <table class="table table-striped m-0" style="min-width: 800px;">
+                <thead>
+                    <tr>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">#
+                        </th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient ID
+                        </th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient Name</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Phone</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Gender</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Consultant</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Last Seen</th>
+                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2801</td>
+                        <td>PRI/1234</td>
+                        <th>Md : Ali</th>
+                        <td>(622) 730 - 1138</td>
+                        <td>Male</td>
+                        <td>Prof. Jasmine Ortiz</td>
+                        <td>06/29/1986</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>2801</td>
+                        <td>PRI/1234</td>
+                        <th>Md : Ali</th>
+                        <td>(622) 730 - 1138</td>
+                        <td>Male</td>
+                        <td>Prof. Jasmine Ortiz</td>
+                        <td>06/29/1986</td>
+                        <td class="--c-orange">Pending</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="javascript:void(0);" class="--c-primary">Load more</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+    <div class="mt-5">
+        <div class="d-flex justify-content-end">
+        </div>
+    </div>
+
+
+    <!-- Script tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>

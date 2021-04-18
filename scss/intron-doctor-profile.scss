@@ -1,0 +1,13 @@
+.intron-doctor-profile {
+  &__stats {
+    height: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .intron-doctor-profile {
+    &__stats {
+      min-height: 170px;
+    }
+  }
+}

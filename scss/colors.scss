@@ -18,6 +18,7 @@
   --light: #fcffff;
   --shadow: #00000010;
   --dull: #33333310;
+  --dull-dark: #a2a6ba;
 }
 
 .--c-primary {
@@ -130,4 +131,10 @@
 }
 .--bg-dull {
   background: var(--dull);
+}
+.--c-dull-dark {
+  color: var(--dull-dark);
+}
+.--bg-dull-dark {
+  background: var(--dull-dark);
 }

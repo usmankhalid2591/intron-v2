@@ -32,11 +32,11 @@
 
 .intron-data-filter-tabs {
   &__tab.active {
-    background: var(--primary);
-    color: white;
+    background: var(--primary) !important;
+    color: white !important;
   }
   &__tab.active:hover {
-    color: white;
+    color: white !important;
   }
 }
 

@@ -193,7 +193,7 @@ select {
 
 .--btn-outlined {
   border-radius: 50px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--primary) !important;
 }
 
 @media (max-width: 768px) {

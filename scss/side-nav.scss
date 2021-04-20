@@ -17,7 +17,7 @@
         color: white;
         position: absolute;
         right: 70px;
-        top: 16px;
+        top: 27px;
       }
       .card-header.collapsed::after {
         /* symbol for "collapsed" panels */
@@ -25,12 +25,14 @@
         color: white;
         position: absolute;
         right: 70px;
-        top: 16px;
+        top: 27px;
       }
 
       a {
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
+        display: flex;
+        align-items: center;
       }
       a:hover {
         background: rgba(0, 0, 0, 0.03);
@@ -56,10 +58,27 @@
       a {
         background: var(--turquoise-dark);
       }
+      .side-nav__icons {
+        background: white !important;
+        i {
+          color: var(--turquoise-dark);
+        }
+      }
     }
     li:nth-last-of-type(1) {
       margin-bottom: 40px;
     }
+  }
+
+  &__icons {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

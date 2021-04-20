@@ -1,13 +1,15 @@
 :root {
   --primary: #47337b;
+  --primary-lighter: #855cff;
+  --primary-pink-lighter: #c287ff;
   --primary-light: #e7e1fe;
   --secondary: #a8cf45;
   --primary-transparent: #47337b80;
   --secondary-transparent: #a8cf4580;
   --orange: #ff5757;
   --orange-light: #f9e8e0;
-  --turquoise-light: #dcf2f5;
   --turquoise: #b7f6ea;
+  --turquoise-light: #dcf2f5;
   --turquoise-dark: #41ccc9;
   --btn-gradient-to-right: linear-gradient(to right, #41ccc9, #4a77ae);
   --btn-gradient-to-left: linear-gradient(to left, #4a77ae, #41ccc9);
@@ -35,6 +37,22 @@
 
 .--bg-primary-light {
   background: var(--primary-light);
+}
+
+.--c-primary-lighter {
+  color: var(--primary-lighter);
+}
+
+.--bg-primary-lighter {
+  background: var(--primary-lighter);
+}
+
+.--c-primary-pink-lighter {
+  color: var(--primary-pink-lighter);
+}
+
+.--bg-primary-pink-lighter {
+  background: var(--primary-pink-lighter);
 }
 
 .--c-secondary {

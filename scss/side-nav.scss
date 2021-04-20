@@ -35,7 +35,7 @@
         align-items: center;
       }
       a:hover {
-        background: rgba(0, 0, 0, 0.03);
+        background: var(--turquoise-dark);
         cursor: pointer;
       }
       .list-inner {

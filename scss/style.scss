@@ -99,3 +99,97 @@
     height: calc(100% + 30px);
   }
 }
+
+.intron-patient-profile-clerking {
+  &__rapid-orders {
+    background: url("../img/rapid-orders-bg.png") 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .form-group {
+    .custom-control-label::before,
+    .custom-file-label,
+    .custom-select {
+      background: transparent;
+      border: none;
+    }
+
+    /* The container must be positioned relative: */
+    .custom-select {
+      position: relative;
+      font-family: Arial;
+      background: #ffffff15;
+      height: 100%;
+      border: 1px solid white;
+    }
+
+    .custom-select select {
+      display: none; /*hide original SELECT element: */
+    }
+
+    .select-items div,
+    .select-selected {
+      border: none !important;
+    }
+
+    /* Style the arrow inside the select element: */
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    /* Point the arrow upwards when the select box is open (active): */
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 7px;
+    }
+
+    /* style the items (options), including the selected item: */
+    .select-items div,
+    .select-selected {
+      color: white;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+    }
+
+    /* Style items (options): */
+    .select-items {
+      position: absolute;
+      background-color: #ffffff15;
+      color: white;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    }
+
+    /* Hide the items when the select box is closed: */
+    .select-hide {
+      display: none;
+    }
+
+    .select-items div:hover,
+    .same-as-selected {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .form-control:focus {
+    background: #ffffff15;
+  }
+
+  .form-control::placeholder {
+    color: white;
+  }
+}

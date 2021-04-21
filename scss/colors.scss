@@ -21,6 +21,7 @@
   --shadow: #00000010;
   --dull: #33333310;
   --dull-dark: #a2a6ba;
+  --white-opaque: #ffffff15;
 }
 
 .--c-primary {
@@ -155,4 +156,10 @@
 }
 .--bg-dull-dark {
   background: var(--dull-dark);
+}
+.--c-white-opaque {
+  color: var(--white-opaque);
+}
+.--bg-white-opaque {
+  background: var(--white-opaque);
 }

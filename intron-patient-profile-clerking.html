@@ -21,7 +21,7 @@
     <title>Intron - Patient Profile</title>
 </head>
 
-<body class="fixed-top-nav-compensation">
+<body class="fixed-top-nav-compensation intron-patient-profile-clerking">
 
     <div class="header --z-index-1">
         <nav class="navbar navbar-expand-lg navbar-light bg-white position-relative">
@@ -487,115 +487,134 @@
 
     </div>
 
-    <div class="p-3 --border-radius-20 --bg-turqoise-light shadow mt-4">
-        <h2 class="--fs-26 --fw-500 --f-poppins --c-turquoise-dark">RAPID ORDERS</h2>
+    <div class="row mt-5">
+        <div class="col-12 col-lg-6">
+            <div class="intron-patient-profile-clerking__rapid-orders --border-radius-20 shadow h-100">
+                <div class="p-3 h-100">
+                    <h2 class="--fs-26 --fw-500 --f-poppins --c-turquoise-dark">RAPID ORDERS</h2>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control --border-radius-5 --bg-white-opaque"
+                                    id="input-field" placeholder="Indication">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="input-field" class="mb-2 text-white">Search</label>
+                                <input type="email" class="form-control --border-radius-5 --bg-white-opaque text-white"
+                                    id="input-field" placeholder="Search here...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="select-field" class="mb-2 text-white">Select Category</label>
 
-        <div class="row mt-3">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="input-field" class="mb-2">Order Name <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control --border-radius-5 bg-transparent" id="input-field"
-                        placeholder="e.g No 52, Agbowo Street">
+                                <div class="">
+                                    <div class="custom-select">
+                                        <select id="select-field">
+                                            <option selected="">Select Specialist</option>
+                                            <option>30-40</option>
+                                            <option>30-40</option>
+                                            <option>30-40</option>
+                                            <option>30-40</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex h-100 align-items-end justify-content-end">
+                                <a href="javascript:void(0);"
+                                    class="btn --large-btn --btn-turqoise --border-radius-50 mb-3">
+                                    Add rapid order
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3 class="text-white">Selected Orders</h3>
+                            <p class="--c-dull-dark">No orders selected yet..</p>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="d-flex h-100 align-items-end justify-content-end">
+                                <a href="javascript:void(0);"
+                                    class="btn --large-btn --btn-outlined --border-radius-50 --bg-turqoise mb-3">
+                                    Recest
+                                </a>
+                                <a href="javascript:void(0);"
+                                    class="btn --large-btn --btn-turqoise --border-radius-50 mb-3 ml-2">
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-5">
-                <div class="form-group">
-                    <label for="input-field" class="mb-2">Order Name <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control --border-radius-5 bg-transparent" id="input-field"
-                        placeholder="e.g No 52, Agbowo Street">
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="form-group">
-                    <label for="input-field" class="mb-2">Order Name <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control --border-radius-5 bg-transparent" id="input-field"
-                        placeholder="e.g No 52, Agbowo Street">
-                </div>
-            </div>
-            <div class="col-12 col-lg-2">
-                <div class="d-flex h-100 align-items-end justify-content-end">
-                    <a href="javascript:void(0);" class="btn --large-btn --btn-turqoise --border-radius-50 mb-3">
-                        Add rapid order
-                    </a>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="input-field" class="mb-2">Presenting Comlaints <span
-                            class="--c-turquoise-dark">*</span></label>
-                    <textarea class="form-control --border-radius-5 bg-transparent" rows="5"
-                        placeholder="e.g No 52, Agbowo Street"></textarea>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="d-flex h-100 align-items-end justify-content-end">
-                    <a href="javascript:void(0);"
-                        class="btn --large-btn --btn-outlined --border-radius-50 --bg-turqoise mb-3">
-                        Recest
-                    </a>
-                    <a href="javascript:void(0);" class="btn --large-btn --btn-turqoise --border-radius-50 mb-3 ml-2">
-                        Order
-                    </a>
+        </div>
+        <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+            <div class="p-3 --border-radius-20 shadow h-100">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="input-field" class="mb-2">Treatment Plan <span
+                                    class="--c-turquoise-dark">*</span></label>
+                            <textarea class="form-control --border-radius-5" rows="5"
+                                placeholder="e.g No 52, Agbowo Street"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="form-group">
+                            <label for="select-field" class="mb-2">Select Specialist <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-control" id="select-field">
+                                <option selected="">Select Specialist</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="form-group">
+                            <label for="select-field" class="mb-2">Select Specialist <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-control" id="select-field">
+                                <option selected="">Select Specialist</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="select-field" class="mb-2">Select Specialist <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-control" id="select-field">
+                                <option selected="">Select Specialist</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                                <option>30-40</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex h-100 align-items-end justify-content-end">
+                            <a href="javascript:void(0);"
+                                class="btn --large-btn --btn-turqoise --border-radius-50 mb-3 ml-2">
+                                Submit
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="p-3 --border-radius-20 shadow mt-4">
-        <div class="row">
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="input-field" class="mb-2">Treatment Plan <span
-                            class="--c-turquoise-dark">*</span></label>
-                    <textarea class="form-control --border-radius-5" rows="5"
-                        placeholder="e.g No 52, Agbowo Street"></textarea>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="form-group">
-                    <label for="select-field" class="mb-2">Select Specialist <span class="text-danger">*</span></label>
-                    <select class="form-control" id="select-field">
-                        <option selected="">Select Specialist</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="form-group">
-                    <label for="select-field" class="mb-2">Select Specialist <span class="text-danger">*</span></label>
-                    <select class="form-control" id="select-field">
-                        <option selected="">Select Specialist</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="form-group">
-                    <label for="select-field" class="mb-2">Select Specialist <span class="text-danger">*</span></label>
-                    <select class="form-control" id="select-field">
-                        <option selected="">Select Specialist</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                        <option>30-40</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="d-flex h-100 align-items-end justify-content-end">
-                    <a href="javascript:void(0);" class="btn --large-btn --btn-turqoise --border-radius-50 mb-3 ml-2">
-                        Submit
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Script tags -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

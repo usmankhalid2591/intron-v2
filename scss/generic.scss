@@ -196,6 +196,12 @@ select {
   border: 1px solid var(--primary) !important;
 }
 
+.--btn-outlined-opaque {
+  border-radius: 50px;
+  border: 1px solid var(--turquoise) !important;
+  background: #41ccc920;
+}
+
 @media (max-width: 768px) {
   .--big-btn {
     width: 200px;

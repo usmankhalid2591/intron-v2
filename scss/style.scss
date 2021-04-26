@@ -13,6 +13,10 @@
 @import "./footer.scss";
 @import "./side-nav.scss";
 
+body {
+  background: #f9fafe;
+}
+
 // Misc Styles
 .--padding-top-356 {
   padding-top: 356px;
@@ -32,7 +36,7 @@
 
 .intron-data-filter-tabs {
   &__tab.active {
-    background: var(--primary) !important;
+    background: var(--btn-gradient-to-right) !important;
     color: white !important;
   }
   &__tab.active:hover {

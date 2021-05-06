@@ -35,6 +35,10 @@ body {
 }
 
 .intron-data-filter-tabs {
+  &__tab {
+    color: black !important;
+  }
+
   &__tab.active {
     background: var(--btn-gradient-to-right) !important;
     color: white !important;
@@ -111,6 +115,9 @@ body {
     height: 100%;
     width: 100%;
     background-size: cover;
+    .form-control {
+      border: 1px solid #ffffff20;
+    }
   }
 
   .form-group {
@@ -127,7 +134,7 @@ body {
       font-family: Arial;
       background: #ffffff15;
       height: 100%;
-      border: 1px solid white;
+      border: 1px solid #ffffff20;
     }
 
     .custom-select select {
@@ -194,6 +201,6 @@ body {
   }
 
   .form-control::placeholder {
-    color: white;
+    color: #ffffff30;
   }
 }

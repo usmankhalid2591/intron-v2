@@ -86,7 +86,7 @@
     z-index: 1;">
     </a>
 
-    <div class="side-nav --btn-gradient-to-bottom --border-tr-radius-20 overflow-auto" id="sideNav">
+    <div class="side-nav --btn-gradient-to-bottom --border-tr-radius-20" id="sideNav">
 
         <ul class="list-unstyled p-0 m-0">
             <li>
@@ -254,9 +254,9 @@
                             <img src="./img/search-icon.png" alt="">
                         </a>
                         <div class="form-group m-0 --border-radius-50">
-                            <input type="text" class="form-control --border-radius-50"
-                                style="padding-right: 60px; height: 40px !important;" id="input-field"
-                                placeholder="To search name or hospital ID..">
+                            <input type="text" class="form-control --border-radius-5"
+                                style="padding-right: 60px; height: 40px !important; background-color: #A2A6BA10;"
+                                id="input-field" placeholder="To search name or hospital ID..">
                         </div>
                     </div>
                 </div>
@@ -269,17 +269,17 @@
         </div>
     </div>
 
-    <div class="mt-5 --shadow --border-radius-20 bg-white">
+    <div class="mt-5">
         <div class="row p-3">
             <div class="col-12 col-lg-6">
                 <div class="d-flex justify-content-center justify-content-lg-start">
-                    <h3 class="--fs-22 --fw-500 --f-poppins">List of all Patients</h3>
+                    <h3 class="--fs-32 --fw-500 --f-poppins">List of all Patients</h3>
                 </div>
             </div>
             <div class="col-12 col-lg-6 mt-3 mt-lg-0">
                 <div class="d-flex justify-content-center justify-content-lg-end">
                     <div class="d-flex align-items-center">
-                        <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-50">
+                        <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-5">
                             <i class="fa fa-calendar mr-2"></i>
                             06/29/1968
                             <i class="fa fa-chevron-down ml-2"></i>
@@ -287,7 +287,7 @@
                     </div>
                     <div class="ml-3">
                         <a href="javascript:void(0);"
-                            class="btn --small-btn text-white --bg-orange-sharp --border-radius-50">
+                            class="btn --small-btn text-white --bg-orange-sharp --border-radius-5">
                             <i class="fas fa-file-excel mr-2"></i>
                             Export to Excel
                         </a>
@@ -295,21 +295,24 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="--shadow --border-radius-20 bg-white">
 
         <div class="--border-bl-radius-20 --border-br-radius-20 overflow-auto p-2" style="max-height: 400px;">
-            <table class="table table-striped m-0" style="min-width: 800px;">
+            <table class="table m-0" style="min-width: 800px;">
                 <thead>
                     <tr>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">#
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">#
                         </th>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient ID
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">Patient ID
                         </th>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Patient Name</th>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Phone</th>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Gender</th>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Consultant</th>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Last Seen</th>
-                        <th scope="col" class="--fs-14 --fw-400 --f-poppins">Status</th>
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">Patient Name</th>
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">Phone</th>
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">Gender</th>
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">Consultant</th>
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">Last Seen</th>
+                        <th scope="col" class="--fs-14 --fw-500 --f-poppins" style="border-top: none;">Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -332,13 +335,6 @@
                         <td>Prof. Jasmine Ortiz</td>
                         <td>06/29/1986</td>
                         <td class="--c-orange-sharp">Pending</td>
-                    </tr>
-                    <tr>
-                        <td colspan="8">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a href="javascript:void(0);" class="--c-primary">Load more</a>
-                            </div>
-                        </td>
                     </tr>
                 </tbody>
             </table>
